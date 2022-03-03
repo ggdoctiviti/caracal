@@ -60,7 +60,7 @@ module Caracal
     end
 
     def type(t)
-      @header_type = t.to_s if t.to_s in %w(default even first)
+      @header_type = t.to_s if %w(default even first).include?(t.to_s)
     end
 
     def contents
